@@ -2,9 +2,282 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Frepego Lakeview Resort</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic reset for margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Layout for the Services Section */
+        .services-container {
+            display: flex;
+            flex-direction: column; /* Stacks containers vertically */
+            align-items: center;
+            gap: 30px; /* Space between containers */
+            padding: 40px;
+        }
+
+        .service-box {
+            width: 80%;
+            max-width: 1200px; /* Limits width for readability */
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .service-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .service-box h2 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .service-box p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .room-list, .restaurant-slider, .bar-slider, .conferencehall-slider {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .room, .restaurant, .bar, .conferencehall {
+            width: 30%;
+        }
+
+        .room-slider img, .restaurant-slider img, .bar-slider img, .conferencehall-slider img {
+            width: 100%;
+            height: auto;
+        }
+
+ /* Button styling */
+        .btn {
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Pop-up styling */
+        .popup {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        /* Overlay styling */
+        .overlay {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        /* Close button styling */
+        .close-btn {
+            background-color: #dc3545;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+
+    <!-- Slick Theme (Optional) -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    <!-- jQuery (Required by Slick Slider) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 </head>
 <body>
+    <!-- Navbar Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.webp" alt="Frepego Lakeview Resort">
+            </div>
+            <div class="navbar" style="flex: 1; text-align: center;">
+                <a href="index.html" style="margin: 0 15px; text-decoration: none; color: #000;">Home</a>
+                <a href="index.html#about" style="margin: 0 15px; text-decoration: none; color: #000;">About</a>
+                <a href="services.html" style="margin: 0 15px; text-decoration: none; color: #000;">Services</a>
+                <a href="index.html#reviews" style="margin: 0 15px; text-decoration: none; color: #000;">Reviews</a>
+                <a href="index.html#contact" style="margin: 0 15px; text-decoration: none; color: #000;">Contact Us</a>
+            </div>
 
+	<div class="contact-item">
+                <i class="fas fa-envelope"></i> <!-- Email Icon -->
+                <span>frepegoresort@gmail.com</span>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h1 style="text-align: center; margin-bottom: 30px;">Our Services</h1>
+
+        <div class="services-container">
+            <!-- Accommodation -->
+            <div class="service-box">
+                <h3>Accommodation</h3>
+                <p>Enjoy luxurious and comfortable rooms with scenic views of the lake.</p>
+                <div class="room-list">
+                    <div class="room">
+                        <div class="room-slider">
+                            <img src="room1.JPG" alt="Room 1">
+                            <img src="room1-2.jpg" alt="Room 1 - Image 2">
+                            <img src="room1-3.jpg" alt="Room 1 - Image 3">
+                        </div>
+                        <h3>Standard Suite</h3>
+                        <p>$25/night</p>
+                    </div>
+
+                    <div class="room">
+                        <div class="room-slider">
+                            <img src="room2.JPG" alt="Room 2">
+                            <img src="room2-2.jpg" alt="Room 2 - Image 2">
+                            <img src="room2-3.jpg" alt="Room 2 - Image 3">
+                        </div>
+                        <h3>Deluxe Suite</h3>
+                        <p>$35/night</p>
+                    </div>
+                </div>
+                <div>
+        <a href="javascript:void(0);" onclick="showPopup()" class="btn">Contact us for reservations</a>
+    </div>
+
+<!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+    <!-- Pop-up container -->
+    <div class="popup" id="popup">
+        <h2>Contact Us for Reservations</h2>
+        <p>+254 789 869 554</p>
+        <p>+254 798 181 054</p>
+        <p>+254 772 696 805</p>
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+            </div>
+
+            <!-- Restaurant -->
+            <div class="service-box">
+                <h3>Restaurant</h3>
+                <p>Indulge in a variety of local and international cuisines in our restaurant.</p>
+                <div class="restaurant-slider">
+                    <img src="fish.png" alt="Restaurant Image 1">
+                    <img src="res1.jpg" alt="Restaurant Image 2">
+                    <img src="pilau.jpg" alt="Restaurant Image 3">
+		    <img src="res2.jpg" alt="Restaurant Image 4">
+		    <img src="res3.jpg" alt="Restaurant Image 5">
+		    <img src="res4.jpg" alt="Restaurant Image 6">
+		    <img src="res5.jpg" alt="Restaurant Image 7">
+		    <img src="res6.jpg" alt="Restaurant Image 8">
+		    <img src="res7.jpg" alt="Restaurant Image 9">
+                </div>
+            </div>
+
+            <!-- Bar -->
+            <div class="service-box">
+                <h3>Bar</h3>
+                <p>Relax with a selection of fine wines, cocktails, and beverages at our bar.</p>
+                <div class="bar-slider">
+                    <img src="bar5.webp" alt="Bar Image 1">
+                </div>
+            </div>
+
+            <!-- Conference Hall -->
+            <div class="service-box">
+                <h3>Conference Hall</h3>
+                <p>Host your business meetings, conferences, and events in our fully equipped hall.</p>
+                <div class="conferencehall-slider">
+                    <img src="ch.jpg" alt="Conference Hall Image 1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Frepego Lakeview Resort | All rights reserved</p>
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.room-slider, .restaurant-slider, .bar-slider, .conferencehall-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,  // Option to show/hide navigation arrows
+                dots: true     // Option to show pagination dots
+            });
+        });
+    </script>
+
+<script>
+        // Function to show the pop-up and overlay
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        // Function to close the pop-up and overlay
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
