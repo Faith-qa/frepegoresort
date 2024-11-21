@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd189d46-5d29-4a58-b0ee-693f6dc0fdca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bar5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frepegoWebsit.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/room1.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/room2.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service2.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service3.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service4.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/serviceone.JPG" afterDir="false" />
-    </list>
+    <list default="true" id="fd189d46-5d29-4a58-b0ee-693f6dc0fdca" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,6 +67,7 @@
       <workItem from="1731497421439" duration="1899000" />
       <workItem from="1731742402808" duration="4000" />
       <workItem from="1731912109674" duration="2944000" />
+      <workItem from="1732039609695" duration="2154000" />
     </task>
     <servers />
   </component>
